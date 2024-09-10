@@ -1,17 +1,32 @@
 class Sidepro < Formula
     desc "The SidePro CLI"
     homepage "https://sidepro.cloud"
-    url "https://shared-clients-api.minio.beta.stack.io/sidepro-cli/channels/beta/sidepro-darwin-x64.tar.gz"
-    sha256 "4e855b3612c27c6ad7e3dcc720d24135be9384d9a6a03f7dcbc8a3eb8e2f8aa6"
-    version "v0.4.1"
+    url "/channels//sidepro-darwin-x64.tar.gz"
+    sha256 "598a7e38f2e9405206130502a722703eeeaaddca5c291d5a34aa1e3168e2b1cc"
+    version "0.4.13"
     version_scheme 1
     
     depends_on "epinio"
   
     on_macos do
       on_intel do
-        url "https://shared-clients-api.minio.beta.stack.io/sidepro-cli/channels/beta/sidepro-darwin-x64.tar.gz"
-        sha256 "4e855b3612c27c6ad7e3dcc720d24135be9384d9a6a03f7dcbc8a3eb8e2f8aa6"
+        url "/channels//sidepro-darwin-x64.tar.gz"
+        sha256 "598a7e38f2e9405206130502a722703eeeaaddca5c291d5a34aa1e3168e2b1cc"
+      end
+      on_arm do
+        url "__CLI_MAC_ARM_DOWNLOAD_URL__"
+        sha256 "__CLI_MAC_ARM_SHA256__"
+      end
+    end
+  
+    on_linux do
+      on_intel do
+        url "__CLI_LINUX_INTEL_DOWNLOAD_URL__"
+        sha256 "__CLI_LINUX_INTEL_SHA256__"
+      end
+      on_arm do
+        url "__CLI_LINUX_ARM_DOWNLOAD_URL__"
+        sha256 "__CLI_LINUX_ARM_SHA256__"
       end
     end
   
