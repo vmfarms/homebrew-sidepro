@@ -2,29 +2,29 @@ class Sidepro < Formula
     desc "The SidePro CLI"
     homepage "https://sidepro.cloud"
     url "https://shared-clients-api.minio.beta.stack.io/sidepro-cli/channels/beta/sidepro-darwin-x64.tar.gz"
-    sha256 "a7a42ac1f89f6697c2290f1f2a93fe7340769e0346ecb49219066ed4c7f25a43"
-    version "1.14.2"
+    sha256 "de56ee651cdea4d8c7854bcb0b01ec8ff8bf2701474f47b02af08bfe2c5c9c4d"
+    version "1.15.0"
     version_scheme 1
   
     on_macos do
       on_intel do
         url "https://shared-clients-api.minio.beta.stack.io/sidepro-cli/channels/beta/sidepro-darwin-x64.tar.gz"
-        sha256 "a7a42ac1f89f6697c2290f1f2a93fe7340769e0346ecb49219066ed4c7f25a43"
+        sha256 "de56ee651cdea4d8c7854bcb0b01ec8ff8bf2701474f47b02af08bfe2c5c9c4d"
       end
       on_arm do
         url "https://shared-clients-api.minio.beta.stack.io/sidepro-cli/channels/beta/sidepro-darwin-arm64.tar.gz"
-        sha256 "2017b1c8fdb3aa515605246199f5c7514f355970bcf835e70853b54ef8aff4cc"
+        sha256 "ea0ba0a8b99dc418f3bc354d0ee83615abc5e19e9f9f8a38db0eb585fd607478"
       end
     end
   
     on_linux do
       on_intel do
         url "https://shared-clients-api.minio.beta.stack.io/sidepro-cli/channels/beta/sidepro-linux-x64.tar.gz"
-        sha256 "4c9e0b6077bf141be54b6e88b306f4e78ff22d353f25b676f074e20f84a40764"
+        sha256 "46a5f5c4c42d750a8818aa7d40ca968a4b198f40aeeb2a2c4a7de677bf3aee6a"
       end
       on_arm do
         url "https://shared-clients-api.minio.beta.stack.io/sidepro-cli/channels/beta/sidepro-linux-arm64.tar.gz"
-        sha256 "1f262d7fbfcf060beba402c21586ea84f18f73b9222e106b3a2faf6331ff9911"
+        sha256 "65fad8ca779e60938e3759ae254df5bcfc87730b6ad703159362ff8474db8141"
       end
     end
   
